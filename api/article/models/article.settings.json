@@ -13,13 +13,15 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "description": {
+    "content": {
       "type": "richtext"
     },
     "date": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "annexes": {
       "collection": "file",
@@ -40,6 +42,23 @@
     "category": {
       "model": "category",
       "via": "articles"
+    },
+    "mainPhoto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }
