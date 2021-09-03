@@ -14,15 +14,17 @@ Strapi est un générateur d'api intégrant pas mal de fonctionnalités:
 
 ## Installation
 
-C'est un projet nodejs donc il vous faut npm:
+Pour ce projet particulier il vous faudra yarn (la documentation utilise principalement yarn et strapi le supporte mieux overhaul).
+
+De plus le projet est setup en ligne via yarn (il se base sur le yarn.lock donc il ne faut pas push de package.lock sur le repo !)
 
 ###Installer les dépendances
 
-<code> npm install </code>
+<code> yarn install </code>
 
 ### Lancer le projet en mode dev
 
-<code>npm run develop</code>
+<code>yarn run develop</code>
 
 ### Lancement et mise en place
 
