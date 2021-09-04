@@ -12,16 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "nom": {
+    "lastName": {
       "type": "string"
     },
-    "prenom": {
+    "name": {
       "type": "string"
-    },
-    "articles": {
-      "via": "membres",
-      "collection": "article",
-      "dominant": true
     },
     "avatar": {
       "model": "file",
@@ -34,6 +29,11 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "articles": {
+      "via": "authors",
+      "collection": "article",
+      "dominant": true
     }
   }
 }
