@@ -68,6 +68,10 @@
     "preview": {
       "type": "string",
       "required": true
+    },
+    "shortTitle": {
+      "type": "string",
+      "required": false
     }
   }
 }
