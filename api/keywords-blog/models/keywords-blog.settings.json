@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "keywords_blogs",
+  "info": {
+    "name": "keywords_blog"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "keyword": {
+      "type": "string"
+    }
+  }
+}

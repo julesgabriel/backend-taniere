@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "period_event",
   "info": {
-    "name": "category",
+    "name": "PeriodesEvents",
     "description": ""
   },
   "options": {
@@ -12,13 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string",
-      "maxLength": 35
-    },
-    "articles": {
-      "via": "category",
-      "collection": "article"
+    "period": {
+      "type": "date"
     }
   }
 }

@@ -14,7 +14,8 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 45
     },
     "content": {
       "type": "richtext"
@@ -40,8 +41,8 @@
       "collection": "membre"
     },
     "category": {
-      "model": "category",
-      "via": "articles"
+      "via": "articles",
+      "model": "category"
     },
     "mainPhoto": {
       "model": "file",
@@ -67,11 +68,19 @@
     },
     "preview": {
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 100
     },
     "shortTitle": {
       "type": "string",
       "required": false
+    },
+    "meta_description": {
+      "type": "text",
+      "maxLength": 160
+    },
+    "keywords_blogs": {
+      "collection": "keywords-blog"
     }
   }
 }
